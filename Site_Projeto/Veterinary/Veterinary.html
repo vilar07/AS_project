@@ -25,6 +25,8 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
    </head>
 <body>
     <div class="sidebar close">
@@ -129,8 +131,66 @@
         <div class="container py-5">
             <div class="d-flex flex-column text-center mb-5">
                 <h1 class="display-4 m-0"><span class="text-primary">What can We Help You With?</span></h1>
+                <h4 class="text-secondary mb-3">Everything with remote consultation, except in cases of emergency!</h4>
+                <div class="cards">
+                  <div class="card">
+                    <h2 class="card-title">Health</h2>
+                    <img src="data:image/png;base64,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" alt="">
+                    <p class="card-desc">Pinnipeds, commonly known as seals,[a] are a widely distributed and diverse clade of carnivorous, fin-footed, semiaquatic marine mammals. They comprise the extant families Odobenidae (whose only living member is the walrus), Otariidae (the eared seals: sea lions and fur seals), and Phocidae (the earless seals, or true seals).</p>
+                  </div>
+                  <div class="card">
+                    <h2 class="card-title">Nutrition</h2>
+                    <img src="https://www.kindpng.com/picc/m/246-2469275_dog-food-png-dog-with-dog-food-transparent.png" alt="">
+                    <p class="card-desc">The lion (Panthera leo) is a species in the family Felidae and a member of the genus Panthera. It has a muscular, deep-chested body, short, rounded head, round ears, and a hairy tuft at the end of its tail. It is sexually dimorphic; adult male lions have a prominent mane.</p>
+                  </div>
+                  <div class="card">
+                    <h2 class="card-title">Emergency</h2>
+                    <img src="https://png.pngtree.com/png-clipart/20190906/original/pngtree-medical-clinic-building-illustration-png-image_4584268.jpg" alt="">
+                    <p class="card-desc">Hawks are a group of medium-sized diurnal birds of prey of the family Accipitridae. Hawks are widely distributed and vary greatly in size.
+                      The subfamily Accipitrinae includes goshawks, sparrowhawks, sharp-shinned hawks and others. This subfamily are mainly woodland birds with long tails and high visual acuity. They hunt by dashing suddenly from a concealed perch.</p>
+                  </div>
+                  <div class="card">
+                    <h2 class="card-title">Behaviour</h2>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXwGgYvHRLThGYwz3mia5tIwKoYX-UVZa5qDia2u_L-pPz5sjtaRNZUPBz8DWu5I0s4w4&usqp=CAU" alt="">
+                    <p class="card-desc">Hawks are a group of medium-sized diurnal birds of prey of the family Accipitridae. Hawks are widely distributed and vary greatly in size.
+                      The subfamily Accipitrinae includes goshawks, sparrowhawks, sharp-shinned hawks and others. This subfamily are mainly woodland birds with long tails and high visual acuity. They hunt by dashing suddenly from a concealed perch.</p>
+                  </div>
+                </div>
             </div>
+            <div class="d-flex flex-column text-center mb-5">
+              
+              <h1 class="display-4 m-0"><span class="text-primary">Veterinaries Available</span></h1>
+              <h4 class="text-secondary mb-3">Choice 1</h4>
 
+              <section class="containerVetBox">
+                <div class="cardVetBox">
+                  <div class="cardVetBox-image card-1"></div>
+                    <h2>Henrique Tomé</h2>
+                    <h5>2 years of experience</h5>
+                  <a href="http://127.0.0.1:5500/Veterinary/DatesAvail.html"><h3>Select</h3></a>
+                </div>
+                <div class="cardVetBox">
+                  <div class="cardVetBox-image card-2"></div>
+                    <h2>Rafael Leão</h2>
+                    <h5>3 years of experience</h5>
+                    <a href="http://127.0.0.1:5500/Veterinary/DatesAvail.html"><h3>Select</h3></a>
+                </div>
+                <div class="cardVetBox">
+                  <div class="cardVetBox-image card-3"></div>
+                    <h2>Iris Margarida</h2>
+                    <h5>5 years of experience</h5>
+                    <a href="http://127.0.0.1:5500/Veterinary/DatesAvail.html"><h3>Select</h3></a>
+                </div>
+                <div class="cardVetBox">
+                  <div class="cardVetBox-image card-4"></div>
+                    <h2>Rita Rodrigues</h2>
+                    <h5>6 years of experience</h5>
+                    <a href="http://127.0.0.1:5500/Veterinary/DatesAvail.html"><h3>Select</h3></a>
+                </div>
+              </section>
+              
+            </div>
+            
 
         </div>
     </div>

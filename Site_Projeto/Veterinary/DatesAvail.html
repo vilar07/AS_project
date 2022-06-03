@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+     <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,700,500,300,100' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"><link rel="stylesheet" href="./style.css">
+
+   </head>
+<body>
+    <div class="sidebar close">
+      <div class="logo-details">
+          <i class='bx bxl-spring-boot'></i>
+        <span class="logo_name">PetLink</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="http://127.0.0.1:5500/HomePage/index.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/HomePage/index.html">DashBoard</a></li>
+          </ul>
+        </li>
+        <li>
+        <li>
+            <a href="http://127.0.0.1:5500/My_Pets/MyPets.html">
+                <i class='bx bx-bug'></i>
+              <span class="link_name">My Pets</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="http://127.0.0.1:5500/My_Pets/MyPets.html">My Pets</a></li>
+            </ul>
+        </li>
+          
+        
+        <li>
+          <a href="#">
+              <i class='bx bx-store' ></i>
+            <span class="link_name">Store</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Store</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/Veterinary/Veterinary.html">
+              <i class='bx bx-plus-medical' ></i>
+            <span class="link_name">Veterinary</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/Veterinary/Veterinary.html">Veterinary</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+              <i class='bx bx-home-heart' ></i>
+            <span class="link_name">Home Services</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Home Services</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+              <i class='bx bx-food-menu' ></i>
+            <span class="link_name">Meal Plans</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Meal Plans</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+              <i class='bx bx-help-circle' ></i>
+            <span class="link_name">Get Help</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Get Help</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="link_name">Setting</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Setting</a></li>
+          </ul>
+        </li>
+        <li>
+      <li>
+          <a href="#">
+              <i class='bx bx-street-view'></i>
+            <span class="link_name">My Account</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">My Account</a></li>
+          </ul>
+        </li>
+    </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Veterinary -> Available Dates</span>
+    </div>
+    <div class="container-fluid bg-light pt-5">
+      <div class="container py-5">
+          <div class="d-flex flex-column text-center mb-5">
+            <h4 class="text-secondary mb-3">The circles with the orange color is the days available for your selected Veterinary!</h4>
+            <div class="container">
+              <div class="calendar">
+                <div class="front">
+                  <div class="current-date">
+                    <!--<h1>Friday 15th</h1>-->
+                    <h1>June 2022</h1>	
+                  </div>
+
+                  <div class="current-month">
+                    <ul class="week-days">
+                      <li>MON</li>
+                      <li>TUE</li>
+                      <li>WED</li>
+                      <li>THU</li>
+                      <li>FRI</li>
+                      <li>SAT</li>
+                      <li>SUN</li>
+                    </ul>
+
+                    <div class="weeks">
+                      <div class="first">
+                        <span class="last-month">28</span>
+                        <span class="last-month">29</span>
+                        <span class="last-month">30</span>
+                        <span class="last-month">31</span>
+                        <span2>01</span2>
+                        <span2>02</span2>
+                        <span2>03</span2>
+                      </div>
+
+                      <div class="second">
+                        <span2>04</span2>
+                        <span2>05</span2>
+                        <!--<span class="event">06</span>-->
+                        <span2>06</span2>
+                        <span2>07</span2>
+                        <span2>08</span2>
+                        <span2>09</span2>
+                        <span2>10</span2>
+                      </div>
+
+                      <div class="third">
+                        <span2>11</span2>
+                        <span2>12</span2>
+                        <span2>13</span2>
+                        <span2>14</span2>
+                        <span class="active">15</span>
+                        <span2>16</span2>
+                        <span class="active">17</span>
+                      </div>
+
+                      <div class="fourth">
+                        <span2>18</span2>
+                        <span class="active">19</span>
+                        <span2>20</span2>
+                        <span2>21</span2>
+                        <span class="active">22</span>
+                        <span class="active">23</span>
+                        <span2>24</span2>
+                      </div>
+
+                      <div class="fifth">
+                        <span2>25</span2>
+                        <span2>26</span2>
+                        <span class="active">27</span>
+                        <span2>28</span2>
+                        <span class="active">29</span>
+                        <span class="active">30</span>
+                        <span2 class="last-month">01</span2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="back">
+                  <div class="info">
+                    <div class="date">
+                      <p class="info-date">
+                      <!--Date: <span>Jan 15th, 2016</span>-->
+                      Time: <span>6:00 PM</span>
+                      </p>
+                      <p class="info-time">
+                        <!--Time: <span>6:35 PM</span>-->
+                      </p>
+                    </div>
+                    <div class="address">
+                      <p>
+                        Link for Consult: <span>https://videoconf-colibri.zoom.us/j/83108335800?pwd=Q2RwdWpRQldaei80anhqNituNWhzdz09</span>
+                      </p>
+                    </div>
+                    <div class="observations">
+                      <p>
+                        Observations: <span>Be there 5 minutes earlier</span>
+                      </p>
+                    </div>
+                    <div class="observations">
+                      <p>
+                        Warning: <span>An email will be sent to you with the Date, Hour, Link and the choosen Veterinary for your animal's consult, please check it out and inform us about any change via e-mail! </span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="actions">
+                    <a href="http://127.0.0.1:5500/Veterinary/Veterinary.html"><button class="save">
+                      Confirm <i class="ion-checkmark"></i>
+                    </button></a>
+                    <a href="http://127.0.0.1:5500/Veterinary/DatesAvail.html"><button class="dismiss">
+                      Cancel <i class="ion-android-close"></i>
+                    </button></a>
+                  </div>
+                </div>
+                
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script><script  src="./DatesAvail.js"></script>
+    
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+
+</body>
+</html>
