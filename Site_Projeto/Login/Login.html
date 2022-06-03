@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Login.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <div class="sidebar close">
+      <div class="logo-details">
+          <i class='bx bxl-spring-boot'></i>
+        <span class="logo_name">PetLink</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="http://127.0.0.1:5500/Login/DashBoard.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/Login/DashBoard.html">DashBoard</a></li>
+          </ul>
+        </li>
+        <li>
+        <li>
+          <a href="http://127.0.0.1:5500/Login/Store.html">
+              <i class='bx bx-store' ></i>
+            <span class="link_name">Store</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/Login/Store.html">Store</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/Login/Subscription.html">
+            <i class='bx bxs-book-bookmark'></i>
+            <span class="link_name">Subscription Plans</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/Login/Subscription.html">Subscription Plans</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+              <i class='bx bx-help-circle' ></i>
+            <span class="link_name">Get Help</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Get Help</a></li>
+          </ul>
+        </li>
+        <li>
+        <li>
+          <a href="http://127.0.0.1:5500/Login/Login.html">
+            <i class='bx bx-log-in'></i>
+            <span class="link_name">Login</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/Login/Login.html">Login</a></li>
+          </ul>
+        </li>
+    </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Login</span>
+    </div>
+    <div class="login-wrap">
+        <div class="login-html">
+            <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+            <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+            <div class="login-form">
+                <div class="sign-in-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <input id="check" type="checkbox" class="check" checked>
+                        <label for="check"><span class="icon"></span> Keep me Signed in</label>
+                    </div>
+                    <div class="group">
+                        <a href="http://127.0.0.1:5500/HomePage/index.html"><input type="submit" class="button" value="Sign In"></a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <a href="#forgot">Forgot Password?</a>
+                    </div>
+                </div>
+                <div class="sign-up-htm">
+                    <div class="group">
+                        <label for="user" class="label">Username</label>
+                        <input id="user" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Repeat Password</label>
+                        <input id="pass" type="password" class="input" data-type="password">
+                    </div>
+                    <div class="group">
+                        <label for="pass" class="label">Email Address</label>
+                        <input id="pass" type="text" class="input">
+                    </div>
+                    <div class="group">
+                        <a href="http://127.0.0.1:5500/Login/Login.html"><input type="submit" class="button" value="Sign Up"></a>
+                    </div>
+                    <div class="hr"></div>
+                    <div class="foot-lnk">
+                        <label for="tab-1">Already Member?</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+
+</body>
+</html>
