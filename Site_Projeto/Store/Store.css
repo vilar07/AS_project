@@ -224,7 +224,7 @@
   height: 60px;
   display: flex;
   align-items: center;
-}
+}   
 .home-section .home-content .bx-menu,
 .home-section .home-content .text{
   color: #11101d;
@@ -259,95 +259,179 @@
   }
 }
 
+
+.search-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: black;
+  padding-right: 40px;
+  color:black;
+}
+.input-search::placeholder{
+  color:black;
+  text-align: center;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:black ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid black;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  text-align: center;
+  background-color: transparent;
+  border-bottom:1px solid black;
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
 *{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  .containerAnimalBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-  
-  .cardAnimalBox{
-    background: rgb(139, 223, 243);
-    width: 270px;
-    margin: 10px;
-    border-radius: 15px;
-  }
-  
-  .cardAnimalBox-image{
-    background-color: rgb(139, 223, 243);
-    height: 300px;
-    margin-bottom: 15px;
-    background-size: cover;
-    border-radius: 15px;
-  }
-  
-  .card-1{
-    background-image: url('/images/titi.jpg');
-  }
-  .card-2{
-    background-image: url('/images/lucras.jpg');
-  }
-  .card-3{
-    background-image: url('https://www.petlove.com.br/images/breeds/193103/profile/original/pastor_alemao-p.jpg?1532539270');
-  }
+  box-sizing: border-box;
+}
 
-  
+.containerStoreBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-  .cardAnimalBox h2{
-    padding: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  }
-  .cardAnimalBox p {
-    padding: 10px;
-  }
-  
-  .cardAnimalBox a{
-    background-color: #11101d;
-    color: white;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 20px 40px;
-  }
-  
-  .cardAnimalBox:hover{
-    background-color: rgb(39, 191, 230);
-    color:black;
-    transform: scale(1.03);
-    transition: all 0.3s ease 0s;
-    text-decoration: none;
-  }
+.cardStoreBox{
+  background: rgb(255, 255, 255);
+  width: 200px;
+  margin: 10px;
+  border-radius: 15px;
+  display: inline;
+}
 
-  .cardAdd{
-    background: rgb(209, 211, 211);
-    width: 300px;
-    margin: 10px;
-    border-radius: 15px;
-  }
-  
-  .cardAdd-image{
-    background-color: rgb(209, 211, 211);
-    height: 300px;
-    width: 300px;
-    margin-bottom: 15px;
-    background-size: cover;
-    border-radius: 15px;
-  }
+.cardStoreBox-image{
+  background-color: rgb(255, 255, 255);
+  height: 200px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 10px;
+}
 
-  .card-4{
-    background-image: url('https://static.thenounproject.com/png/3387958-200.png');
-  }
+.card-1{
+  background-image: url('https://www.animalshop.pt/wp-content/uploads/2018/01/master_food_junior_premium_1x1.jpg');
+}
 
-  .cardAdd a{
-    background-color: #11101d;
-    color: white;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 20px 40px;
-  }
+.card-2{
+  background-image: url('https://target.scene7.com/is/image/Target/GUEST_98d1ac87-012b-44bc-a589-51ec44813675?wid=488&hei=488&fmt=pjpeg');
+}
+
+.card-3{
+  background-image: url('https://www.lojadocao.pt/image/cache/data/brinquedos/kong/kong_rope_pup1-800x800.jpg');
+}
+
+.card-4{
+  background-image: url('https://www.lojadocao.pt/image/cache/data/racao_lojadocao/snacks_imune-800x800.jpg');
+}
+
+.card-5{
+  background-image: url('https://www.lojadocao.pt/image/cache/data/FARMACIA/omniomega-800x800.jpg');
+}
+.card-6{
+  background-image: url('https://www.lojadocao.pt/image/cache/data/FARMACIA/uvita_pills-800x800.jpg');
+}
+
+.card-7{
+  background-image: url('https://www.lojadocao.pt/image/cache/data/roupa/bota_1-400x400.jpg');
+}
+
+.card-8{
+  background-image: url('https://www.lojadocao.pt/image/cache/data/roupa/colete_2-800x800.jpg');
+}
+
+
+
+
+.cardStoreBox h2{
+  padding: 10px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.cardStoreBox p {
+  padding: 10px;
+  text-align: center;
+}
+
+.cardStoreBox a{
+  background-color: #11101d;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  text-align: center;
+  margin: 5px 10px;
+}
+
+.cardStoreBox:hover{
+  background-color: rgb(255, 255, 255);
+  color:black;
+  transform: scale(1.03);
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.cardAdd{
+  background: rgb(255, 255, 255);
+  width: 300px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.cardAdd-image{
+  background-color: rgb(255, 255, 255);
+  height: 300px;
+  width: 300px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.card-add{
+  background-image: url('https://static.thenounproject.com/png/3387958-200.png');
+}
+
+.cardAdd a{
+  background-color: #11101d;
+  color: white;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 40px;
+}
