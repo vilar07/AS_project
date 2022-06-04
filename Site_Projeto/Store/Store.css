@@ -426,6 +426,12 @@
   display: block;
   margin: 40px auto 80px auto;
   font-size: 1.75em;
+  display: inline;
+}
+.btn-checkout {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.50em;
 }
 
 .section-header {
@@ -440,4 +446,40 @@
 
 .margined{
   padding-bottom: 20px;
+}
+
+
+.popup{width: 50%;
+  height: 80%;
+  background: white;
+  text-align: center;
+  vertical-align: middle;
+  padding: .67em .67em;
+  cursor: pointer; 
+  position: fixed;
+  border-radius: 6px;
+  top: 0;  
+  left: calc(55% - 50px);
+  margin-top: 50px;
+  transform: translate(-50%,-50%) scale(0.1);
+  visibility: hidden;
+  transition: transform 0.4s top 0.4s;
+}
+
+.open-popup{
+  visibility: visible;
+  top: calc(50% - 10px); 
+  transform: translate(-50%,-50%) scale(1);
+}
+.popup h2,input{
+  padding-top: 30px;
+  font-size: 25px;
+} 
+
+.popup input{
+  height: 30px;
+}
+
+.buttons {
+  display: inline-block;
 }

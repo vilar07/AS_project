@@ -193,7 +193,25 @@
             <span class="cart-total-price">0€</span>
         </div>
         <div class="margined">
-          <button class="btn btn-primary btn-purchase " type="button">PURCHASE</button>
+          <button type="button" class="btn btn-primary btn-checkout" onclick="openPopup()"> Check Out</button>
+          <!--  -->
+          <div class="popup" id="popup">
+            <h2>Primeiro Nome:</h2>
+            <input type="text">
+            <h2>Ultimo Nome:</h2>
+            <input type="text">
+            <h2>Número telefone:</h2>
+            <input type="number">
+            <h2>Morada: </h2>
+            <input type="text">
+            <h2>Código Postal:</h2>
+            <input type="number">
+            <div>
+              <button class="btn btn-primary btn-purchase " type="button" onclick="closePopup()">PURCHASE</button>
+              <button class="btn btn-purchase" type="button" onclick="closePopup()">CANCEL</button>
+            </div>
+            
+          </div>
         </div>
         </section>
     </section>
@@ -212,6 +230,17 @@
   sidebarBtn.addEventListener("click", ()=>{
     sidebar.classList.toggle("close");
   });
+
+
+  let popup = document.getElementById("popup");
+  
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
   </script>
 
 </body>
