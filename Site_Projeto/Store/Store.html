@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="Store.css">
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="Store.css">
     <!-- Boxiocns CDN Link -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="#" />
+      <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="Store.js" async></script>
    </head>
 <body>
     <div class="sidebar close">
@@ -120,74 +122,83 @@
         <span class="text">Store</span>
       </div>
       
-      <div class="search-box">
-        <button class="btn-search"><i class="fas fa-search"></i></button>
-        <input type="text" class="input-search" placeholder="Type to Search...">
-      </div>
-      
-
-      <section class="containerStoreBox">
-        <div class="cardStoreBox">
-          <div class="cardStoreBox-image card-1"></div>
-          <p>Master Food Júnior Premium </p>
-          <p><b>31,45€</b></p>
-          <a href="http://127.0.0.1:5500/Store/Store.html"><h4>Add</h4></a>
-        </div>
-        
-        <div class="cardStoreBox">
-          <div class="cardStoreBox-image card-2"></div>
-          <p>Kong Osso Corestrength Bone</p>
-          <p><b>7,50€</b></p>
-          <a href="http://127.0.0.1:5500/Store/Store.html"><h4>Add</h4></a>
-        </div>
-        
-        <div class="cardStoreBox">
-          <div class="cardStoreBox-image card-3"></div>
-          <p>Kong Osso Goodie Bone com corda </p>
-          <p><b>6,70€</b></p>
-          <a href="http://127.0.0.1:5500/Store/Store.html"><h4>Add</h4></a>
-        </div>
-
-        <div class="cardStoreBox">
-          <div class="cardStoreBox-image card-4"></div>
-          <p>Loja do Cão Treats Funcionais Imune  </p>
-          <p><b>2,50€</b></p>
-          <a href="http://127.0.0.1:5500/Store/Store.html"><h4>Add</h4></a>
-        </div>
+      <section class="searchbar">
+        <input type="text" placeholder="Type to Search..."> 
       </section>
 
-      <section class="containerStoreBox">
-        <div class="cardStoreBox">
-          <div class="cardStoreBox-image card-5"></div>
-          <p>HiFarmaX Omniomega </p>
-          <p><b>39,50€</b></p>
-          <a href="http://127.0.0.1:5500/Store/Store.html"><h4>Add</h4></a>
+      <section class="container">
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Botas Protecao</span>
+                <img class="shop-item-image" src="/images/BotasProtecao.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">12.99€</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Colete de Arrefecimento</span>
+                <img class="shop-item-image" src="/images/ColeteArrefecimento.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">14.99€</span>
+                    <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Comprimidos para Cão</span>
+                <img class="shop-item-image" src="/images/ComprimidosCaes.jpg">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">9.99€</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+              <span class="shop-item-title">Kong Osso</span>
+              <img class="shop-item-image" src="/images/KongOsso.jpg">
+              <div class="shop-item-details">
+                  <span class="shop-item-price">12.99€</span>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+              </div>
+          </div>
+          <div class="shop-item">
+              <span class="shop-item-title">Kong Osso com Corda</span>
+              <img class="shop-item-image" src="/images/KongOssoComCorda.jpg">
+              <div class="shop-item-details">
+                  <span class="shop-item-price">14.99€</span>
+                  <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+              </div>
+          </div>
+          <div class="shop-item">
+              <span class="shop-item-title">Master Food Junior Premium</span>
+              <img class="shop-item-image" src="/images/MasterFoodJuniorPremium.jpg">
+              <div class="shop-item-details">
+                  <span class="shop-item-price">9.99€</span>
+                  <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+              </div>
+          </div>
         </div>
-        
-        <div class="cardStoreBox">
-          <div class="cardStoreBox-image card-6"></div>
-          <p>U-Vita Comprimidos Cães </p>
-          <p><b>10,00€</b></p>
-          <a href="http://127.0.0.1:5500/Store/Store.html"><h4>Add</h4></a>
-        </div>
-        
-        <div class="cardStoreBox">
-          <div class="cardStoreBox-image card-7"></div>
-          <p>PortaWear Botas de protecção </p>
-          <p><b>25,90€</b></p>
-          <a href="http://127.0.0.1:5500/Store/Store.html"><h4>Add</h4></a>
-        </div>
-
-        <div class="cardStoreBox">
-          <div class="cardStoreBox-image card-8"></div>
-          <p>Trixie colete de arrefecimento </p>
-          <p><b>13,50€</b></p>
-          <a href="http://127.0.0.1:5500/Store/Store.html"><h4>Add</h4></a>
-        </div>
-        
       </section>
+      <section class="container">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+            
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">0€</span>
+        </div>
+        <div class="margined">
+          <button class="btn btn-primary btn-purchase " type="button">PURCHASE</button>
+        </div>
+        </section>
     </section>
-  <script>
+
+<script>
   let arrow = document.querySelectorAll(".arrow");
   for (var i = 0; i < arrow.length; i++) {
     arrow[i].addEventListener("click", (e)=>{
