@@ -471,13 +471,19 @@
   top: calc(50% - 10px); 
   transform: translate(-50%,-50%) scale(1);
 }
-.popup h2,input{
-  padding-top: 30px;
-  font-size: 25px;
+.popup h2{
+  font-size: 30px;
+  margin-top: 20px;
 } 
 
 .popup input{
-  height: 30px;
+  text-align: center;
+  justify-content: center;
+  height: 35px;
+}
+
+.popup select{
+  height: 35px;
 }
 
 .buttons {

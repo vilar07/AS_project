@@ -68,7 +68,7 @@ function addItemtoCart(title, price, imageSrc){
                         <div class="cart-quantity cart-column">
                             <input class="cart-quantity-input" type="number" value="1">
                             <button class="btn btn-danger" type="button">REMOVE</button>
-                            </div>`
+                        </div>`
     cartRow.innerHTML =  cartRowContens
     cartItems.appendChild(cartRow)
     cartRow.getElementsByClassName('btn-danger')[0].addEventListener('click',removeCartItem)

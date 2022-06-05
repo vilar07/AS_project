@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="MyPets.css">
     <!-- Boxiocns CDN Link -->
+    <link rel="shortcut icon" href="#" />
+    <script src="MyPets.js" async></script>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
    </head>
@@ -115,39 +117,53 @@
       <i class='bx bx-menu' ></i>
       <span class="text">My Pets</span>
     </div>
-    <section class="containerAnimalBox">
-        <div class="cardAnimalBox">
-          <div class="cardAnimalBox-image card-1"></div>
-            <h2>Titi</h2>
-            <p><b>Name:</b> Titi</p>
-            <p><b>Sex:</b> Male</p>
-            <p><b>Age:</b> 4 Weeks</p>
-            <p><b>Size:</b> Medium</p>
-          <a href="http://127.0.0.1:5500/My_Pets/MyPets.html"><h3>More Informations</h3></a>
+    <section class="container">
+      <div class="anim">
+      </div>
+      
+      <div class="margined">
+            <div class="popup" id="popup">
+              <form class="form">
+                <label id="fotografia">
+                  <h2>Fotografia:</h2>
+                  <input type="text" placeholder="Fotografia" name="fotografia" required >
+                </label>
+                <label id="nomeAnimal">
+                  <h2>Nome Animal:</h2>
+                  <input type="text" placeholder="Nome Animal" name="nomeAnimal" required>
+                </label>
+                <label id="sexo">
+                  <h2>Sexo:</h2>
+                  <select name="sexo" id="sexo" required>
+                    <option value="Empty"></option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                  </select>                
+                </label>
+                <label id="age">
+                  <h2>Age:</h2>
+                  <input type="number" placeholder="Age" name="age" required>
+                </label>
+                <label id="size">
+                  <h2>Size:</h2>
+                  <select name="size" id="size" required>
+                    <option value="Empty"></option>
+                    <option value="Pequeno">Pequeno</option>
+                    <option value="Médio">Médio</option>
+                    <option value="Grande">Grande</option>
+                  </select>
+                </label>
+              </form>   
+              <div class="button1">
+                <button id="submitInput" onclick="closePopup()"> Add Animal </button>
+              </div>   
+          </div>
         </div>
-        <div class="cardAnimalBox">
-          <div class="cardAnimalBox-image card-2"></div>
-            <h2>Lucras</h2>
-            <p><b>Name:</b> Lucras</p>
-            <p><b>Sex:</b> Female</p>
-            <p><b>Age:</b> 2 Years</p>
-            <p><b>Size:</b> Large</p>
-            <a href="http://127.0.0.1:5500/My_Pets/MyPets.html"><h3>More Informations</h3></a>
-        </div>
-        <div class="cardAnimalBox">
-          <div class="cardAnimalBox-image card-3"></div>
-            <h2>Nico</h2>
-            <p><b>Name:</b> Nico</p>
-            <p><b>Sex:</b> Male</p>
-            <p><b>Age:</b> 5 Years</p>
-            <p><b>Size:</b> Large</p>
-            <a href="http://127.0.0.1:5500/My_Pets/MyPets.html"><h3>More Informations</h3></a>
-        </div>
-        <div class="cardAdd">
-          <div class="cardAdd-image card-4"></div>
-            <a href="http://127.0.0.1:5500/My_Pets/MyPets.html"><h3>Add New Animal</h3></a>
-        </div>
-      </section>
+  </section>
+        
+      <div>
+        <button  onclick="openPopup()" class="addAnimal">  Add animal </button>
+      </div>
   </section>
   <script>
   let arrow = document.querySelectorAll(".arrow");
@@ -163,6 +179,20 @@
   sidebarBtn.addEventListener("click", ()=>{
     sidebar.classList.toggle("close");
   });
+
+  let popup = document.getElementById("popup");
+  
+  function closePopup(){
+    popup.classList.remove("open-popup");
+  }
+
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  
+  //function closePopup(){
+  //  popup.classList.remove("open-popup");
+  //}
   </script>
 
 </body>

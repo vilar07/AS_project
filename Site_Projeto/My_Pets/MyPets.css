@@ -211,7 +211,7 @@
 .home-section{
   position: relative;
   background: #E4E9F7;
-  height: 100vh;
+  height: 100%;
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
@@ -272,30 +272,33 @@
   }
   
   .cardAnimalBox{
-    background: rgb(139, 223, 243);
+    background: white;
     width: 270px;
     margin: 10px;
     border-radius: 15px;
+    text-align: center;
   }
   
   .cardAnimalBox-image{
-    background-color: rgb(139, 223, 243);
-    height: 300px;
+    background-color: white;
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px;
   }
   
-  .card-1{
-    background-image: url('/images/titi.jpg');
-  }
-  .card-2{
-    background-image: url('/images/lucras.jpg');
-  }
-  .card-3{
-    background-image: url('https://www.petlove.com.br/images/breeds/193103/profile/original/pastor_alemao-p.jpg?1532539270');
+  .cardAnimalBox img{
+    width: 200px;
+    height: 300px;
   }
 
+  .addAnimal{
+    background-color: green;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-left: 47.5%;
+    margin-bottom: 100px;
+  }
   
 
   .cardAnimalBox h2{
@@ -314,9 +317,9 @@
     text-align: center;
     margin: 20px 40px;
   }
-  
+
   .cardAnimalBox:hover{
-    background-color: rgb(39, 191, 230);
+    background-color: white;
     color:black;
     transform: scale(1.03);
     transition: all 0.3s ease 0s;
@@ -332,11 +335,13 @@
   
   .cardAdd-image{
     background-color: rgb(209, 211, 211);
-    height: 300px;
-    width: 300px;
+    height: 30%;
+    width: 70%;
     margin-bottom: 15px;
     background-size: cover;
     border-radius: 15px;
+    margin-top: 50%;
+    margin-left: 13%;
   }
 
   .card-4{
@@ -351,3 +356,100 @@
     text-align: center;
     margin: 20px 40px;
   }
+
+  .popup{width: 50%;
+    height: 80%;
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer; 
+    position: fixed;
+    border-radius: 6px;
+    top: 0;  
+    left: calc(55% - 50px);
+    margin-top: 50px;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s top 0.4s;
+  }
+  
+  .open-popup{
+    visibility: visible;
+    top: calc(50% - 10px); 
+    transform: translate(-50%,-50%) scale(1);
+  }
+  .popup h2{
+    font-size: 30px;
+    margin-top: 20px;
+  } 
+  
+  .popup input,select{
+    text-align: center;
+    justify-content: center;
+    height: 35px;
+    width: 30%;
+    margin-top: 15px;
+  }
+
+  .buttons {
+    display: inline-block;
+  }
+  
+  .btn {
+    margin-top: 50px;
+    width: 15%;
+    height: 30px;
+  }
+
+  .container {
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+  }
+
+  .anim {
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .animal-info{
+    width: 300px;
+    background-color: white;
+    size: 15px;
+    margin-bottom: 30px;
+    margin-left: 80px;
+    padding: 20px;
+    left: 50px;
+  }
+
+  .animal-info-image{
+    width: 220px;
+    height: 300px;
+  }
+
+  
+  .animal-info-name {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+  }
+
+  .animal-info a{
+    background-color: #1d1b31;
+    width: 50px;
+    height: 50px;
+  }
+
+  .button1 {
+    margin-top: 50px;
+  }
+  
