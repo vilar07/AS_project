@@ -414,12 +414,13 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 20px;
-    text-align: center;
   }
 
   .animal-info{
     width: 300px;
-    background-color: rgb(175, 172, 172);
+    border-radius: 10px;
+    background-color: rgb(12, 166, 184);
+    text-align: center;
     size: 15px;
     margin-bottom: 30px;
     margin-left: 80px;
@@ -428,8 +429,8 @@
   }
 
   .animal-info-image{
-    width: 220px;
-    height: 300px;
+    width: 260px;
+    height: 400px;
   }
 
   
