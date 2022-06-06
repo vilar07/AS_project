@@ -117,53 +117,63 @@
       <i class='bx bx-menu' ></i>
       <span class="text">My Pets</span>
     </div>
-    <section class="container">
-      <div class="anim">
-      </div>
-      
-      <div class="margined">
-            <div class="popup" id="popup">
-              <form class="form">
-                <label id="fotografia">
-                  <h2>Fotografia:</h2>
-                  <input type="text" placeholder="Fotografia" name="fotografia" required >
-                </label>
-                <label id="nomeAnimal">
-                  <h2>Nome Animal:</h2>
-                  <input type="text" placeholder="Nome Animal" name="nomeAnimal" required>
-                </label>
-                <label id="sexo">
-                  <h2>Sexo:</h2>
-                  <select name="sexo" id="sexo" required>
-                    <option value="Empty"></option>
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                  </select>                
-                </label>
-                <label id="age">
-                  <h2>Age:</h2>
-                  <input type="number" placeholder="Age" name="age" required>
-                </label>
-                <label id="size">
-                  <h2>Size:</h2>
-                  <select name="size" id="size" required>
-                    <option value="Empty"></option>
-                    <option value="Pequeno">Pequeno</option>
-                    <option value="Médio">Médio</option>
-                    <option value="Grande">Grande</option>
-                  </select>
-                </label>
-              </form>   
-              <div class="button1">
-                <button id="submitInput" onclick="closePopup()"> Add Animal </button>
-              </div>   
+    <div class="container-fluid bg-light pt-5">
+      <div class="container py-5">
+          <div class="d-flex flex-column text-center mb-5">
+              <h1 class="display-4 m-0"><span class="text-primary">Registe your animal!</span></h1>
+              <h4 class="text-secondary mb-3">Registe your animal to save its information for the future and to benefit from the app!</h4>
           </div>
-        </div>
-  </section>
-        
-      <div>
-        <button  onclick="openPopup()" class="addAnimal">  Add animal </button>
+          <section class="container">
+            <div class="anim">
+            </div>
+            
+            <div class="margined">
+                  <div class="popup" id="popup">
+                    <form class="form">
+                      <label id="fotografia">
+                        <h2>Fotografia:</h2>
+                        <input type="text" placeholder="Fotografia" name="fotografia" required >
+                      </label>
+                      <label id="nomeAnimal">
+                        <h2>Nome Animal:</h2>
+                        <input type="text" placeholder="Nome Animal" name="nomeAnimal" required>
+                      </label>
+                      <label id="sexo">
+                        <h2>Sexo:</h2>
+                        <select name="sexo" id="sexo" required>
+                          <option value="Empty"></option>
+                          <option value="Male">Male</option>
+                          <option value="Female">Female</option>
+                        </select>                
+                      </label>
+                      <label id="age">
+                        <h2>Age:</h2>
+                        <input type="number" placeholder="Age" name="age" required>
+                      </label>
+                      <label id="size">
+                        <h2>Size:</h2>
+                        <select name="size" id="size" required>
+                          <option value="Empty"></option>
+                          <option value="Pequeno">Pequeno</option>
+                          <option value="Médio">Médio</option>
+                          <option value="Grande">Grande</option>
+                        </select>
+                      </label>
+                    </form>   
+                    <div class="button1">
+                      <button id="submitInput" onclick="closePopup()"> Add Animal </button>
+                    </div>   
+                </div>
+            </div>
+          </section>
+          <div>
+            <button  onclick="openPopup()" class="addAnimal">  Add animal </button>
+          </div>
       </div>
+    </div>
+    
+        
+      
   </section>
   <script>
   let arrow = document.querySelectorAll(".arrow");
