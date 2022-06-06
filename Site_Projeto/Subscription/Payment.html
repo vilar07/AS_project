@@ -2,15 +2,18 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Subscription.css">
+    <link rel="stylesheet" href="Payment.css">
     <!-- Boxiocns CDN Link -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <!-- site metas -->
     <title>PetLink</title>
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'><link rel="stylesheet" href="./Payment.css">
    </head>
 <body>
     <div class="sidebar close">
@@ -114,88 +117,64 @@
           </ul>
         </li>
     </div>
+    
   <section class="home-section">
     <div class="home-content">
       <i class='bx bx-menu' ></i>
-      <span class="text">Subscription Plans</span>
+      <span class="text">Subscription Plans -> Payment</span>
     </div>
-
-    <div class="container-fluid bg-light pt-5">
-      <div class="container py-5">
-          <div class="d-flex flex-column text-center mb-5">
-              <h1 class="display-4 m-0"><span class="text-primary">Choice a Subscription Plan!</span></h1>
-              <h4 class="text-secondary mb-3">If you don't have one subscription plan yet, buy one to enjoy the app!</h4>
-          <div class="snip1214">
-            <div class="plan">
-              <h3 class="plan-title">
-                Starter
-              </h3>
-              <div class="plan-cost"><span class="plan-price">$19</span><span class="plan-type">/ Monthly</span></div>
-              <ul class="plan-features">
-                <li><i class="ion-checkmark"> </i>1 remote Vet consultations per month</li>
-                <li><i class="ion-checkmark"> </i>1 Home Service per Month</li>
-                <li><i class="ion-checkmark"> </i>Access to the animal's file</li>
-                <li><i class="ion-checkmark"> </i>Access to nutrition plans</li>
-                <li><i class="ion-checkmark"> </i>Access to treatment plans</li>
-                <li><i class="ion-checkmark"> </i>-</li>
-                <li><i class="ion-checkmark"> </i>-</li>
-              </ul>
-              <div class="plan-select"><a href="http://127.0.0.1:5500/Subscription/Payment.html">Buy Plan</a></div>
-            </div>
-            <div class="plan">
-              <h3 class="plan-title">
-                Basic
-              </h3>
-              <div class="plan-cost"><span class="plan-price">$29</span><span class="plan-type">/ Monthly</span></div>
-              <ul class="plan-features">
-                <li><i class="ion-checkmark"> </i>3 remote Vet consultations per month</li>
-                <li><i class="ion-checkmark"> </i>3 Home Service per Month</li>
-                <li><i class="ion-checkmark"> </i>Access to the animal's file</li>
-                <li><i class="ion-checkmark"> </i>Access to nutrition plans</li>
-                <li><i class="ion-checkmark"> </i>Access to treatment plans</li>
-                <li><i class="ion-checkmark"> </i>-</li>
-                <li><i class="ion-checkmark"> </i>-</li>
-              </ul>
-              <div class="plan-select"><a href="http://127.0.0.1:5500/Subscription/Payment.html">Buy Plan</a></div>
-            </div>
-            <div class="plan featured">
-              <h3 class="plan-title">
-                Professional
-              </h3>
-              <div class="plan-cost"><span class="plan-price">$49</span><span class="plan-type">/ Monthly</span></div>
-              <ul class="plan-features">
-                <li><i class="ion-checkmark"> </i>5 remote Vet consultations per month</li>
-                <li><i class="ion-checkmark"> </i>Vet comes to your house 1 time</li>
-                <li><i class="ion-checkmark"> </i>5 Home Service per Month</li>
-                <li><i class="ion-checkmark"> </i>Access to the animal's file</li>
-                <li><i class="ion-checkmark"> </i>Access to nutrition plans</li>
-                <li><i class="ion-checkmark"> </i>Access to treatment plans</li>
-                <li><i class="ion-checkmark"> </i>-</li>
-              </ul>
-              <div class="plan-select"><a href="http://127.0.0.1:5500/Subscription/Payment.html">Buy Plan</a></div>
-            </div>
-            <div class="plan">
-              <h3 class="plan-title">
-                Ultra
-              </h3>
-              <div class="plan-cost"><span class="plan-price">$99</span><span class="plan-type">/ Monthly</span></div>
-              <ul class="plan-features">
-                <li><i class="ion-checkmark"> </i>Unlimited remote Vet consultations</li>
-                <li><i class="ion-checkmark"> </i>Vet comes to your house 3 times</li>
-                <li><i class="ion-checkmark"> </i>10 Home Service per Month</li>
-                <li><i class="ion-checkmark"> </i>Access to the animal's file</li>
-                <li><i class="ion-checkmark"> </i>Access to nutrition plans</li>
-                <li><i class="ion-checkmark"> </i>Access to treatment plans</li>
-                <li><i class="ion-checkmark"> </i>2 Free Products(less than 10$)</li>
-              </ul>
-              <div class="plan-select"><a href="http://127.0.0.1:5500/Subscription/Payment.html">Buy Plan</a></div>
-            </div>
-          </div>
+    <div id="checkOut">
+      <h1>Checkout</h1>
+      <h4>Payment Details</h4>
+      <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="cardName">Card Holder Name</label>
+          <input type="text" class="form-control" id="cardName" placeholder="Name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="cardNum">Card Number</label>
+          <input type="password" class="form-control" id="cardNum" placeholder="1234567890098765">
         </div>
       </div>
+        <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="endDate">Expiration Date: Month</label>
+        <select id="endDate" class="form-control">
+          <option selected>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+          <option>06</option>
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+          </div>
+        <div class="form-group col-md-4">
+          <label for="endDate">Year</label>
+        <select id="endDate" class="form-control">
+          <option selected>2022</option>
+          <option>2023</option>
+        </select>
+      </div>
+      
+        <div class="form-group col-md-4">
+          <label for="cVV">CVV</label>
+          <input type="text" class="form-control" id="cVV" placeholder="123">
+        </div>
+      </div>
+     
+      <button class="btn btn-primary"><a href="http://127.0.0.1:5500/HomePage/index.html">submit</a></button>
+    </form>
     </div>
-  
+
   </section>
+  
   <script>
   let arrow = document.querySelectorAll(".arrow");
   for (var i = 0; i < arrow.length; i++) {
