@@ -56,7 +56,7 @@ function addAnimaltoList(fotografia,age,nome,sexo,size){
                                 <p><b>Sex:</b> ${sexo}</p>
                                 <p><b>Age:</b> ${age} </p>
                                 <p><b>Size:</b> ${size}</p>
-                                <a href="http://127.0.0.1:5500/My_Pets/MyPets.html"><h3>Remove</h3></a>
+                                <a href="http://127.0.0.1:5500/My_Pets/MyPets.html"><h3>More Informations</h3></a>
                             </div>
                         </div>` 
     cartRow.innerHTML =  cartRowContens
