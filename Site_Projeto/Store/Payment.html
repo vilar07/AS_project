@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Payment.css">
+    <!-- Boxiocns CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- site metas -->
+    <title>PetLink</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'><link rel="stylesheet" href="./Payment.css">
+   </head>
+<body>
+    <div class="sidebar close">
+      <div class="logo-details">
+          <i class='bx bxl-spring-boot'></i>
+        <span class="logo_name">PetLink</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="http://127.0.0.1:5500/HomePage/index.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="link_name">Dashboard</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/HomePage/index.html">DashBoard</a></li>
+          </ul>
+        </li>
+        <li>
+        <li>
+            <a href="http://127.0.0.1:5500/My_Pets/MyPets.html">
+                <i class='bx bx-bug'></i>
+              <span class="link_name">My Pets</span>
+            </a>
+            <ul class="sub-menu blank">
+              <li><a class="link_name" href="http://127.0.0.1:5500/My_Pets/MyPets.html">My Pets</a></li>
+            </ul>
+        </li>
+          
+        
+        <li>
+          <a href="http://127.0.0.1:5500/Store/Store.html">
+              <i class='bx bx-store' ></i>
+            <span class="link_name">Store</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/Store/Store.html">Store</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/Veterinary/Veterinary.html">
+              <i class='bx bx-plus-medical' ></i>
+            <span class="link_name">Veterinary</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/Veterinary/Veterinary.html">Veterinary</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+              <i class='bx bx-home-heart' ></i>
+            <span class="link_name">Home Services</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Home Services</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+              <i class='bx bx-food-menu' ></i>
+            <span class="link_name">Meal Plans</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Meal Plans</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="http://127.0.0.1:5500/Subscription/Subscription.html">
+            <i class='bx bxs-book-bookmark'></i>
+            <span class="link_name">Subscription Plans</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="http://127.0.0.1:5500/Subscription/Subscription.html">Subscription Plans</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+              <i class='bx bx-help-circle' ></i>
+            <span class="link_name">Get Help</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Get Help</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#">
+            <i class='bx bx-cog' ></i>
+            <span class="link_name">Setting</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">Setting</a></li>
+          </ul>
+        </li>
+        <li>
+      <li>
+          <a href="#">
+              <i class='bx bx-street-view'></i>
+            <span class="link_name">My Account</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="#">My Account</a></li>
+          </ul>
+        </li>
+    </div>
+    
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Store -> Payment</span>
+    </div>
+    <div id="checkOut">
+      <h1>Checkout</h1>
+      <h4>Payment Details</h4>
+      <form>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="cardName">Card Holder Name</label>
+          <input type="text" class="form-control" id="cardName" placeholder="Name">
+        </div>
+        <div class="form-group col-md-6">
+          <label for="cardNum">Card Number</label>
+          <input type="password" class="form-control" id="cardNum" placeholder="1234567890098765">
+        </div>
+      </div>
+        <div class="form-row">
+      <div class="form-group col-md-4">
+        <label for="endDate">Expiration Date: Month</label>
+        <select id="endDate" class="form-control">
+          <option selected>01</option>
+          <option>02</option>
+          <option>03</option>
+          <option>04</option>
+          <option>05</option>
+          <option>06</option>
+          <option>07</option>
+          <option>08</option>
+          <option>09</option>
+          <option>10</option>
+          <option>11</option>
+          <option>12</option>
+        </select>
+          </div>
+        <div class="form-group col-md-4">
+          <label for="endDate">Year</label>
+        <select id="endDate" class="form-control">
+          <option selected>2022</option>
+          <option>2023</option>
+        </select>
+      </div>
+      
+        <div class="form-group col-md-4">
+          <label for="cVV">CVV</label>
+          <input type="text" class="form-control" id="cVV" placeholder="123">
+        </div>
+      </div>
+    </form>
+    </div>
+
+    <button type ="submit" class="btn" onclick="openPopup()">submit</button>
+      <div class ="popup" id="popup">
+        <img src="404-tick.png">
+        <h2>Thank You!</h2>
+        <p>Your buy has been successfully done. Thanks!</p>
+        <p>Was sent an email with all the informations about your purcshase!</p>
+        <button type="button"><a href="http://127.0.0.1:5500/HomePage/index.html">OK</a></button>
+      </div>
+
+  </section>
+
+  <script>
+  let popup = document.getElementById("popup");
+
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  </script>
+  
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
+
+</body>
+</html>
