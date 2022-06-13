@@ -168,12 +168,26 @@
           <input type="text" class="form-control" id="cVV" placeholder="123">
         </div>
       </div>
-     
-      <button class="btn btn-primary"><a href="http://127.0.0.1:5500/HomePage/index.html">submit</a></button>
     </form>
     </div>
 
+    <button type ="submit" class="btn" onclick="openPopup()">submit</button>
+      <div class ="popup" id="popup">
+        <img src="404-tick.png">
+        <h2>Thank You!</h2>
+        <p>Your buy has been successfully done. Thanks!</p>
+        <button type="button"><a href="http://127.0.0.1:5500/HomePage/index.html">OK</a></button>
+      </div>
+
   </section>
+
+  <script>
+  let popup = document.getElementById("popup");
+
+  function openPopup(){
+    popup.classList.add("open-popup");
+  }
+  </script>
   
   <script>
   let arrow = document.querySelectorAll(".arrow");
