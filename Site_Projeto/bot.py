@@ -13,6 +13,8 @@ driver = webdriver.Chrome(
 
 driver.get("http://127.0.0.1:5500/Login/DashBoard.html")
 f = open("results.txt", "a")
+f.truncate(0)
+
 driver.maximize_window()
 time.sleep(1)
 driver.find_element(By.XPATH,'/html/body/div/ul/li[6]/a').click()
