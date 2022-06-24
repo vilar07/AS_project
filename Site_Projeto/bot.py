@@ -51,19 +51,27 @@ time.sleep(2)
 flag=driver.find_element(By.XPATH,"/html/body/section/div[2]/div/section[2]/div/div[2]/div/button")
 driver.execute_script("arguments[0].scrollIntoView();",flag)
 flag.click()
+
+f.write("Adicionei um Colete de Arrefecimento ao carrinho!\n")
 time.sleep(2)
 flag=driver.find_element(By.XPATH,"/html/body/section/div[2]/div/section[2]/div/div[4]/div/button")
 driver.execute_script("arguments[0].scrollIntoView();",flag)
 flag.click()
+f.write("Adicionei um Kong Osso ao carrinho!\n")
 time.sleep(2)
+
 flag=driver.find_element(By.XPATH,"/html/body/section/div[2]/div/section[2]/div/div[6]/div/button")
 driver.execute_script("arguments[0].scrollIntoView();",flag)
 flag.click()
+f.write("Adicionei um Master Food Junior Premium ao carrinho!\n")
 time.sleep(2)
+
 driver.execute_script("window.scrollBy(0,document.body.scrollHeight)")
 time.sleep(1)
 driver.find_element(By.XPATH,"/html/body/section/div[2]/div/section[3]/div[2]/div[1]/div[2]/button").click()
+f.write("Removi o Colete de Arrefeciento do carrinho!\n")
 time.sleep(2)
+
 driver.find_element(By.XPATH,"/html/body/section/div[2]/div/section[3]/div[4]/button").click()
 
 driver.find_element(By.XPATH,"//*[@id='popup']/input[1]").send_keys("Teste")
